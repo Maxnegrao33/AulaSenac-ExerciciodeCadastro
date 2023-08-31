@@ -1,0 +1,11 @@
+opcao = ''
+listaNome = []
+listaCelular = []
+while opcao!='x':
+    nome = input('Informe o nome: ')
+    celular = input('Informe o celular: ')
+    listaNome.appemd(nome)
+    listaCelular.append(celular)
+    opcao=input('\naperte X para finalizar ou continuar')
+    for i in range(len(listaNome)):
+        print('Nome: ',listaNome[i], ' - Celular: ', listaCelular[i])
